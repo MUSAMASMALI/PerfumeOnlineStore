@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>719710388533-io7u6r6eq3tlbbgcerapqlqa15o5u14g.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.719710388533-io7u6r6eq3tlbbgcerapqlqa15o5u14g</string>
+	<key>API_KEY</key>
+	<string>AIzaSyA9nNo3F39mRdaDDW_AUYbAtJ-ZsI8G-BU</string>
+	<key>GCM_SENDER_ID</key>
+	<string>719710388533</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>musa-masmali.PerfumeOnlineStore</string>
+	<key>PROJECT_ID</key>
+	<string>perfumeonlinestore-restored</string>
+	<key>STORAGE_BUCKET</key>
+	<string>perfumeonlinestore-restored.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:719710388533:ios:aae7c5f685b25495b00c7c</string>
+</dict>
+</plist>

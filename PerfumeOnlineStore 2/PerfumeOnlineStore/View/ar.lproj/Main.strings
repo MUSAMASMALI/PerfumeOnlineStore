@@ -1,0 +1,90 @@
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "2Vj-fn-tKg"; */
+"2Vj-fn-tKg.text" = "Label";
+
+/* Class = "UILabel"; text = "Password"; ObjectID = "34B-Qq-RiI"; */
+"34B-Qq-RiI.text" = "Password";
+
+/* Class = "UILabel"; text = "Phone Number"; ObjectID = "4k9-hL-ASL"; */
+"4k9-hL-ASL.text" = "Phone Number";
+
+/* Class = "UILabel"; text = "Password"; ObjectID = "7Zc-0J-f88"; */
+"7Zc-0J-f88.text" = "Password";
+
+/* Class = "UILabel"; text = "Name"; ObjectID = "EaA-Bd-uid"; */
+"EaA-Bd-uid.text" = "Name";
+
+/* Class = "UILabel"; text = "Email"; ObjectID = "GtW-tU-yq3"; */
+"GtW-tU-yq3.text" = "Email";
+
+/* Class = "UIButton"; configuration.title = "Creat New Account"; ObjectID = "HST-NG-7XJ"; */
+"HST-NG-7XJ.configuration.title" = "Creat New Account";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "HST-NG-7XJ"; */
+"HST-NG-7XJ.normalTitle" = "Button";
+
+/* Class = "UIBarButtonItem"; title = "Logout"; ObjectID = "JTD-gv-5Nq"; */
+"JTD-gv-5Nq.title" = "Logout";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "Kai-gf-7tT"; */
+"Kai-gf-7tT.text" = "Label";
+
+/* Class = "UILabel"; text = "Email"; ObjectID = "KoE-TV-7bH"; */
+"KoE-TV-7bH.text" = "Email";
+
+/* Class = "UINavigationItem"; title = "Home"; ObjectID = "OH0-c8-oiK"; */
+"OH0-c8-oiK.title" = "Home";
+
+/* Class = "UILabel"; text = "Perfume Online Store"; ObjectID = "OK8-fT-9QG"; */
+"OK8-fT-9QG.text" = "Perfume Online Store";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "QW7-4k-BOf"; */
+"QW7-4k-BOf.text" = "Label";
+
+/* Class = "UIButton"; configuration.title = "Add"; ObjectID = "Sva-HO-2dU"; */
+"Sva-HO-2dU.configuration.title" = "Add";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Sva-HO-2dU"; */
+"Sva-HO-2dU.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "Uw8-Yp-cyg"; */
+"Uw8-Yp-cyg.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "VSB-sz-4lw"; */
+"VSB-sz-4lw.text" = "Label";
+
+/* Class = "UIBarButtonItem"; title = "Item"; ObjectID = "aSr-0b-w18"; */
+"aSr-0b-w18.title" = "Item";
+
+/* Class = "UILabel"; text = "Confirm Password"; ObjectID = "drC-mg-vJX"; */
+"drC-mg-vJX.text" = "Confirm Password";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "is7-bN-852"; */
+"is7-bN-852.text" = "Title";
+
+/* Class = "UIButton"; configuration.title = "Login"; ObjectID = "jWq-cP-67t"; */
+"jWq-cP-67t.configuration.title" = "Login";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "jWq-cP-67t"; */
+"jWq-cP-67t.normalTitle" = "Button";
+
+/* Class = "UISegmentedControl"; kQl-gY-Y2d.segmentTitles[0] = "AR"; ObjectID = "kQl-gY-Y2d"; */
+"kQl-gY-Y2d.segmentTitles[0]" = "AR";
+
+/* Class = "UISegmentedControl"; kQl-gY-Y2d.segmentTitles[1] = "EN"; ObjectID = "kQl-gY-Y2d"; */
+"kQl-gY-Y2d.segmentTitles[1]" = "EN";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "khT-fN-qgb"; */
+"khT-fN-qgb.text" = "Label";
+
+/* Class = "UIButton"; configuration.title = "Creat New Account"; ObjectID = "ljt-zJ-Pyd"; */
+"ljt-zJ-Pyd.configuration.title" = "Creat New Account";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "ljt-zJ-Pyd"; */
+"ljt-zJ-Pyd.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Desccription"; ObjectID = "lmb-Bn-b10"; */
+"lmb-Bn-b10.text" = "Desccription";
+
+/* Class = "UILabel"; text = "number"; ObjectID = "xRU-G3-DqU"; */
+"xRU-G3-DqU.text" = "number";

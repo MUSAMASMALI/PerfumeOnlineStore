@@ -1,0 +1,29 @@
+/* 
+  Localizable.strings
+  PerfumeOnlineStore
+
+  Created by موسى مسملي on 09/01/2022.
+  
+*/
+"perfume" = "عطور";
+"backButton" = "رجوع";
+"login" = "تسجيل الدخول";
+"register" = "حساب جديد";
+
+"RegRegisterVC" = "انشاءحساب جديد";
+"name" = "الاسم";
+"mobile" = "الجوال";
+"email" = "الايميل";
+"password" = "كلمة المرور";
+"confirmPassword" = "تاكيد كلمة المرور";
+
+"backButton" = "رجوع";
+//
+"backButton" = "رجوع";
+"title" = "اسم المنتج";
+"description" = "وصف المنتج";
+"add" = " اضافه";
+"updatePost" = "تعديل";
+//
+"backButton" = "رجوع";
+"logOut" = "تسجيل خروج";

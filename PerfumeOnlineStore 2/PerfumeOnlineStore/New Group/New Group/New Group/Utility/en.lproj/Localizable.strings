@@ -1,0 +1,28 @@
+/* 
+  Localizable.strings
+  PerfumeOnlineStore
+
+  Created by موسى مسملي on 09/01/2022.
+  
+*/
+"perfume" = "Perfume";
+"backButton" = "Back";
+"login" = "Login";
+//
+"register" = "New account";
+"name" = "Name";
+"mobile" = "Mobile";
+"email" = "Email";
+"password" = "Password";
+"confirmPassword" = "Confirm Password";
+//
+"backButton" = "Back";
+//
+"backButton" = "Back";
+"title" = "Title";
+"description" = "Description";
+"add" = "Add";
+"updatePost" = "UpdatePost";
+//
+"backButton" = "Back";
+"logOut" = "logeOut";
