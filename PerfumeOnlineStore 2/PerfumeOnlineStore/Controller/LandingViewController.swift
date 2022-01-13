@@ -2,9 +2,10 @@ import UIKit
 import Firebase
 
 class LandingViewController: UIViewController {
+    @IBOutlet weak var imagelogo: UIImageView!
     @IBOutlet weak var registerButton: UIButton!
     @IBOutlet weak var loginButton: UIButton!
-    @IBOutlet weak var perfumeLable: UILabel!
+    @IBOutlet weak var errorLable: UILabel!
     @IBOutlet weak var emailLabel: UILabel!{
         didSet{
             emailLabel.text = "email".localized
@@ -46,9 +47,10 @@ class LandingViewController: UIViewController {
     let activityIndicator = UIActivityIndicatorView()
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.addGestureRecognizer(UITapGestureRecognizer(target: view, action: #selector(UIView.endEditing(_:))))
         navigationItem.backBarButtonItem = UIBarButtonItem(
             title: "backButton".localized, style: .plain, target: nil, action: nil)
-        perfumeLable.text = "perfume".localized
+       // perfumeLable.text = "perfume".localized
         loginButton.setTitle("login".localized, for: .normal)
         registerButton.setTitle("register".localized, for: .normal)
         
@@ -58,6 +60,13 @@ class LandingViewController: UIViewController {
            let password = passwordTextField.text {
             Activity.showIndicator(parentView: self.view, childView: activityIndicator)
             Auth.auth().signIn(withEmail: email, password: password) { authResult, error in
+                if error == nil {
+                print("Login succesfully")
+                }else{
+                print(error?.localizedDescription as Any)
+                Activity.removeIndicator(parentView: self.view, childView: self.activityIndicator)
+                self.errorLable.text = error?.localizedDescription
+                }
                 if let _ = authResult {
                     if let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "HomeNavigationController") as? UINavigationController {
                         vc.modalPresentationStyle = .fullScreen

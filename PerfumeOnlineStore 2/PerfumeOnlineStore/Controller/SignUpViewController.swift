@@ -5,9 +5,13 @@ class SignUpViewController: UIViewController {
     let imagePickerController = UIImagePickerController()
     var activityIndicator = UIActivityIndicatorView()
     @IBOutlet weak var registerButton: UIButton!
+    
+
+    @IBOutlet weak var errorLable: UILabel!
+    
     @IBOutlet weak var userImageView: UIImageView! {
         didSet {
-            userImageView.layer.borderColor = UIColor.systemGreen.cgColor
+            userImageView.layer.borderColor = UIColor.systemPurple.cgColor
             userImageView.layer.borderWidth = 3.0
             userImageView.layer.cornerRadius = userImageView.bounds.height / 2
             userImageView.layer.masksToBounds = true
@@ -29,6 +33,7 @@ class SignUpViewController: UIViewController {
     @IBOutlet weak var confirmPasswordLable: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.addGestureRecognizer(UITapGestureRecognizer(target: view, action: #selector(UIView.endEditing(_:))))
         navigationItem.backBarButtonItem = UIBarButtonItem(
             title: "backButton".localized, style: .plain, target: nil, action: nil)
         registerButton.setTitle("RegRegisterVC".localized, for: .normal)
@@ -53,16 +58,21 @@ class SignUpViewController: UIViewController {
            password == confirmPassword {
             Activity.showIndicator(parentView: self.view, childView: activityIndicator)
             Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
-                if let error = error {
-                    print("Registration Auth Error",error.localizedDescription)
-                    Activity.removeIndicator(parentView: self.view, childView: self.activityIndicator)
+                
+                if let error = error{
+                self.errorLable.text = error.localizedDescription
+                Activity.removeIndicator(parentView: self.view, childView: self.activityIndicator)
                 }
+         //       if let error = error {
+          //          print("Registration Auth Error",error.localizedDescription)
+           //         Activity.removeIndicator(parentView: self.view, childView: self.activityIndicator)
+             //   }
                 if let authResult = authResult {
                     let storageRef = Storage.storage().reference(withPath: "users/\(authResult.user.uid)")
                     let uploadMeta = StorageMetadata.init()
                     uploadMeta.contentType = "image/jpeg"
                     storageRef.putData(imageData, metadata: uploadMeta) { storageMeta, error in
-                        if let error = error {
+                        if let error = error{
                             print("Registration Storage Error",error.localizedDescription)
                         }
                         storageRef.downloadURL { url, error in
@@ -94,6 +104,12 @@ class SignUpViewController: UIViewController {
                         }
                     }
                 }
+            }
+        }else{
+            if passwordTextField.text != confirmPasswordTextField.text!{
+                errorLable.text = "Password Not Corecct".localized
+            }else{
+                errorLable.text = "Empty Information"
             }
         }
     }

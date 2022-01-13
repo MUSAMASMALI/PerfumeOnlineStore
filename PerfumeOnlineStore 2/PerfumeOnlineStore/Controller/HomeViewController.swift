@@ -20,7 +20,7 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-       
+     //   view.addGestureRecognizer(UITapGestureRecognizer(target: view, action: #selector(UIView.endEditing(_:))))
         
         navigationItem.backBarButtonItem = UIBarButtonItem(
             title: "backButton".localized, style: .plain, target: nil, action: nil)
