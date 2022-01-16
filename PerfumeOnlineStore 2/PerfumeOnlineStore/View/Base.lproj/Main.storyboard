@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="N0G-6U-lnF">
-    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <device id="retina4_7" orientation="portrait" appearance="dark"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="96q-N5-SS6">
-                                <rect key="frame" x="25" y="53" width="325" height="480"/>
+                                <rect key="frame" x="25" y="53" width="325" height="509"/>
                                 <subviews>
                                     <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="kQl-gY-Y2d">
                                         <rect key="frame" x="0.0" y="0.0" width="325" height="32"/>
@@ -34,7 +34,7 @@
                                             <action selector="languageChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="8Va-zY-zfD"/>
                                         </connections>
                                     </segmentedControl>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="upd" translatesAutoresizingMaskIntoConstraints="NO" id="XML-hq-oal">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.75" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="شعار ٤" translatesAutoresizingMaskIntoConstraints="NO" id="XML-hq-oal">
                                         <rect key="frame" x="0.0" y="46" width="325" height="157"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="325" id="ab6-qN-RTY"/>
@@ -53,12 +53,12 @@
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TLf-Ty-5jI">
                                         <rect key="frame" x="0.0" y="254" width="325" height="34"/>
-                                        <color key="backgroundColor" red="0.29657319188117981" green="0.065418034791946411" blue="0.2947763204574585" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" name="labelColor"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="34" id="Uoo-li-m97"/>
                                         </constraints>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
@@ -74,46 +74,70 @@
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6p6-f2-Poj">
                                         <rect key="frame" x="0.0" y="339" width="325" height="34"/>
-                                        <color key="backgroundColor" red="0.29657319188117981" green="0.065418034791946411" blue="0.2947763204574585" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" name="labelColor"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="34" id="6an-TE-iTh"/>
                                             <constraint firstAttribute="width" constant="325" id="dtv-0w-doq"/>
                                         </constraints>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
                                     </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="88q-bA-SID">
+                                        <rect key="frame" x="0.0" y="388" width="325" height="14"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain"/>
+                                        <connections>
+                                            <action selector="visbiltyPassword:" destination="BYZ-38-t0r" eventType="touchUpInside" id="02a-da-fPs"/>
+                                        </connections>
+                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jWq-cP-67t">
-                                        <rect key="frame" x="0.0" y="388" width="325" height="31"/>
-                                        <color key="backgroundColor" name="Color"/>
+                                        <rect key="frame" x="0.0" y="417" width="325" height="31"/>
+                                        <color key="backgroundColor" systemColor="secondaryLabelColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="31" id="FgW-M3-gnH"/>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="325" id="hOi-Pl-NEi"/>
                                         </constraints>
-                                        <color key="tintColor" red="0.29657319188117981" green="0.065418034791946411" blue="0.2947763204574585" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="tintColor" name="labelColor"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Login"/>
+                                        <buttonConfiguration key="configuration" style="plain">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Login">
+                                                    <attributes>
+                                                        <font key="NSFont" size="18" name="Helvetica-Bold"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </buttonConfiguration>
                                         <connections>
                                             <action selector="logInPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fP8-a9-AXC"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HST-NG-7XJ">
-                                        <rect key="frame" x="0.0" y="434" width="325" height="31"/>
-                                        <color key="backgroundColor" name="Color"/>
+                                        <rect key="frame" x="0.0" y="463" width="325" height="31"/>
+                                        <color key="backgroundColor" systemColor="secondaryLabelColor"/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="325" id="Uc6-lX-EZX"/>
                                             <constraint firstAttribute="height" constant="31" id="Zyi-Fp-UPe"/>
                                         </constraints>
-                                        <color key="tintColor" red="0.29657319188117981" green="0.065418034791946411" blue="0.2947763204574585" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="tintColor" name="labelColor"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Creat New Account"/>
+                                        <buttonConfiguration key="configuration" style="plain">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Creat New Account">
+                                                    <attributes>
+                                                        <font key="NSFont" size="18" name="Helvetica-Bold"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </buttonConfiguration>
                                         <connections>
                                             <segue destination="P0J-Ja-4iR" kind="show" id="nvQ-hK-n1Q"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xic-Qk-DwM">
-                                        <rect key="frame" x="0.0" y="480" width="325" height="0.0"/>
+                                        <rect key="frame" x="0.0" y="509" width="325" height="0.0"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                         <color key="textColor" systemColor="systemRedColor"/>
                                         <nil key="highlightedColor"/>
@@ -122,7 +146,7 @@
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                        <color key="backgroundColor" systemColor="systemGray3Color"/>
                         <constraints>
                             <constraint firstItem="96q-N5-SS6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="9" id="Ac9-ee-Bky"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="96q-N5-SS6" secondAttribute="trailing" constant="25" id="MzR-hq-ZFI"/>
@@ -137,6 +161,7 @@
                         <outlet property="imagelogo" destination="XML-hq-oal" id="hmH-8s-5Yq"/>
                         <outlet property="languageSegmentControk" destination="kQl-gY-Y2d" id="gU9-WA-vDT"/>
                         <outlet property="loginButton" destination="jWq-cP-67t" id="ViA-Wn-v0d"/>
+                        <outlet property="passwordEyeButton" destination="88q-bA-SID" id="9Yr-DP-rlX"/>
                         <outlet property="passwordLabel" destination="7Zc-0J-f88" id="IDT-FW-iVy"/>
                         <outlet property="passwordTextField" destination="6p6-f2-Poj" id="bfH-mi-niG"/>
                         <outlet property="registerButton" destination="HST-NG-7XJ" id="40J-mY-BnN"/>
@@ -156,7 +181,7 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="dqJ-2i-yrn">
                                 <rect key="frame" x="0.0" y="44" width="375" height="623"/>
-                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                <color key="backgroundColor" systemColor="systemGray3Color"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="PostCell" rowHeight="222" id="1Ot-Ml-oaa" customClass="PostTableViewCell" customModule="PerfumeOnlineStore" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="44.5" width="375" height="222"/>
@@ -261,11 +286,13 @@
                     </view>
                     <navigationItem key="navigationItem" title="Home" id="OH0-c8-oiK">
                         <barButtonItem key="leftBarButtonItem" title="Logout" id="JTD-gv-5Nq">
+                            <color key="tintColor" systemColor="systemTealColor"/>
                             <connections>
                                 <action selector="handleLogout:" destination="uZm-cd-LXb" id="SVQ-0v-cOH"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Item" image="plus.circle.fill" catalog="system" id="aSr-0b-w18">
+                            <color key="tintColor" systemColor="systemTealColor"/>
                             <connections>
                                 <segue destination="aZI-6x-JdR" kind="show" id="Jfj-sA-MLV"/>
                             </connections>
@@ -335,9 +362,9 @@
                                                     </label>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Aj8-hr-ZlD">
                                                         <rect key="frame" x="0.0" y="25.5" width="335" height="34"/>
-                                                        <color key="backgroundColor" red="0.29657319188117981" green="0.065418034791946411" blue="0.2947763204574585" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="backgroundColor" name="labelColor"/>
+                                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
@@ -358,9 +385,9 @@
                                                     </label>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="B60-K3-ov1">
                                                         <rect key="frame" x="0.0" y="25.5" width="335" height="34"/>
-                                                        <color key="backgroundColor" red="0.29657319188117981" green="0.065418034791946411" blue="0.2947763204574585" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="backgroundColor" name="labelColor"/>
+                                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
@@ -381,9 +408,9 @@
                                                     </label>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sNs-AA-Cuf">
                                                         <rect key="frame" x="0.0" y="25.5" width="335" height="34"/>
-                                                        <color key="backgroundColor" red="0.29657319188117981" green="0.065418034791946411" blue="0.2947763204574585" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="backgroundColor" name="labelColor"/>
+                                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
@@ -404,9 +431,9 @@
                                                     </label>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GLa-rD-IHm">
                                                         <rect key="frame" x="0.0" y="25.5" width="335" height="34"/>
-                                                        <color key="backgroundColor" red="0.29657319188117981" green="0.065418034791946411" blue="0.2947763204574585" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="backgroundColor" name="labelColor"/>
+                                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
                                                     </textField>
@@ -427,9 +454,9 @@
                                                     </label>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Z8t-OU-KfZ">
                                                         <rect key="frame" x="0.0" y="25.5" width="335" height="34"/>
-                                                        <color key="backgroundColor" red="0.29657319188117981" green="0.065418034791946411" blue="0.2947763204574585" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="backgroundColor" name="labelColor"/>
+                                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                                     </textField>
@@ -458,16 +485,25 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="dlT-kf-pP0">
                                         <rect key="frame" x="80" y="556.5" width="175" height="31"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ljt-zJ-Pyd">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ljt-zJ-Pyd">
                                                 <rect key="frame" x="0.0" y="0.0" width="175" height="31"/>
-                                                <color key="backgroundColor" name="Color"/>
+                                                <color key="backgroundColor" systemColor="secondaryLabelColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="175" id="ZyP-U8-VFc"/>
                                                     <constraint firstAttribute="height" constant="31" id="y7J-UK-3pD"/>
                                                 </constraints>
-                                                <color key="tintColor" red="0.29657319188117981" green="0.065418034791946411" blue="0.2947763204574585" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="Creat New Account"/>
+                                                <color key="tintColor" name="labelColor"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Button">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="Creat New Account">
+                                                            <attributes>
+                                                                <font key="NSFont" size="16" name="Helvetica-Bold"/>
+                                                                <font key="NSOriginalFont" usesAppearanceFont="YES"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </state>
                                                 <connections>
                                                     <action selector="handleRegister:" destination="P0J-Ja-4iR" eventType="touchUpInside" id="VY7-ec-toM"/>
                                                 </connections>
@@ -478,7 +514,7 @@
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="KlH-QW-OAP"/>
-                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                        <color key="backgroundColor" systemColor="systemGray3Color"/>
                         <constraints>
                             <constraint firstItem="uob-Cn-Aa5" firstAttribute="top" secondItem="KlH-QW-OAP" secondAttribute="top" constant="5" id="XVz-cV-5ak"/>
                             <constraint firstItem="KlH-QW-OAP" firstAttribute="trailing" secondItem="uob-Cn-Aa5" secondAttribute="trailing" constant="20" id="kgb-7X-Ent"/>
@@ -514,6 +550,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="cbG-Xl-m6M">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" systemColor="systemTealColor"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -610,7 +647,7 @@
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="GCJ-Aq-u5J"/>
-                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                        <color key="backgroundColor" systemColor="systemGray3Color"/>
                         <constraints>
                             <constraint firstItem="SH8-kX-Ycr" firstAttribute="leading" secondItem="GCJ-Aq-u5J" secondAttribute="leading" constant="16" id="FAl-hD-YgK"/>
                             <constraint firstItem="SH8-kX-Ycr" firstAttribute="top" secondItem="GCJ-Aq-u5J" secondAttribute="top" constant="30" id="SQ4-qB-bga"/>
@@ -665,16 +702,17 @@
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="is7-bN-852">
                                                                 <rect key="frame" x="0.0" y="0.0" width="300" height="26.5"/>
-                                                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                                                <color key="backgroundColor" systemColor="systemGray3Color"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="R5P-KF-Sof">
                                                                 <rect key="frame" x="0.0" y="26.5" width="300" height="40"/>
-                                                                <color key="backgroundColor" red="0.29657319188117981" green="0.065418034791946411" blue="0.2947763204574585" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <color key="backgroundColor" name="labelColor"/>
+                                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                                 <textInputTraits key="textInputTraits"/>
                                                             </textField>
                                                         </subviews>
@@ -697,9 +735,9 @@
                                                             </label>
                                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Tcc-z1-iI8">
                                                                 <rect key="frame" x="0.0" y="26.5" width="300" height="97"/>
-                                                                <color key="backgroundColor" red="0.29657319188117981" green="0.065418034791946411" blue="0.2947763204574585" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <color key="backgroundColor" name="labelColor"/>
+                                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                             </textView>
@@ -720,14 +758,22 @@
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sva-HO-2dU">
                                                 <rect key="frame" x="0.0" y="0.0" width="187" height="48"/>
-                                                <color key="backgroundColor" systemColor="systemGrayColor"/>
+                                                <color key="backgroundColor" systemColor="secondaryLabelColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="48" id="4ca-7z-fuO"/>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="187" id="N2Z-jW-itQ"/>
                                                 </constraints>
-                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="tintColor" name="labelColor"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="Add"/>
+                                                <buttonConfiguration key="configuration" style="plain">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="Add">
+                                                            <attributes>
+                                                                <font key="NSFont" size="22" name="Helvetica-Bold"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </buttonConfiguration>
                                                 <connections>
                                                     <action selector="handleActionTouch:" destination="aZI-6x-JdR" eventType="touchUpInside" id="adk-Lp-Zwt"/>
                                                 </connections>
@@ -738,7 +784,7 @@
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Q7t-ST-pmF"/>
-                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                        <color key="backgroundColor" systemColor="systemGray3Color"/>
                         <constraints>
                             <constraint firstItem="Ddc-bA-0M1" firstAttribute="leading" secondItem="Q7t-ST-pmF" secondAttribute="leading" constant="16" id="4nS-qm-LBS"/>
                             <constraint firstItem="Ddc-bA-0M1" firstAttribute="top" secondItem="Q7t-ST-pmF" secondAttribute="top" constant="10" id="VZI-RT-sgO"/>
@@ -780,19 +826,29 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="leW-SI-clU"/>
+        <segue reference="Jfj-sA-MLV"/>
     </inferredMetricsTieBreakers>
+    <color key="tintColor" name="lblColor"/>
     <resources>
         <image name="plus.circle.fill" catalog="system" width="128" height="121"/>
-        <image name="upd" width="500" height="353"/>
-        <namedColor name="Color">
-            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <image name="شعار ٤" width="1080" height="1080"/>
+        <namedColor name="labelColor">
+            <color red="0.75199997425079346" green="0.90499997138977051" blue="0.95999997854232788" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="lblColor">
+            <color red="0.20900000631809235" green="0.59600001573562622" blue="0.68999999761581421" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray3Color">
+            <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGray6Color">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -805,6 +861,9 @@
         </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

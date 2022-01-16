@@ -11,6 +11,8 @@ class LandingViewController: UIViewController {
             emailLabel.text = "email".localized
         }
     }
+    
+    @IBOutlet weak var passwordEyeButton: UIButton!
     @IBOutlet weak var passwordLabel: UILabel!{
         didSet{
             passwordLabel.text = "password".localized
@@ -47,6 +49,9 @@ class LandingViewController: UIViewController {
     let activityIndicator = UIActivityIndicatorView()
     override func viewDidLoad() {
         super.viewDidLoad()
+        passwordTextField.rightView = passwordEyeButton
+                passwordTextField.rightViewMode = .always
+        
         view.addGestureRecognizer(UITapGestureRecognizer(target: view, action: #selector(UIView.endEditing(_:))))
         navigationItem.backBarButtonItem = UIBarButtonItem(
             title: "backButton".localized, style: .plain, target: nil, action: nil)
@@ -55,6 +60,7 @@ class LandingViewController: UIViewController {
         registerButton.setTitle("register".localized, for: .normal)
         
     }
+  
     @IBAction func logInPressed(_ sender: Any) {
         if let email = emailTextField.text,
            let password = passwordTextField.text {
@@ -76,6 +82,19 @@ class LandingViewController: UIViewController {
                 }
             }
         }
+    }
+    
+    @IBAction func visbiltyPassword(_ sender: UIButton) {
+        passwordTextField.isSecureTextEntry.toggle()
+                if passwordTextField.isSecureTextEntry {
+                    if let image = UIImage(systemName: "eye.fill") {
+                        sender.setImage(image, for: .normal)
+                    }
+                } else {
+                    if let image = UIImage(systemName: "eye.slash.fill") {
+                        sender.setImage(image, for: .normal)
+                    }
+                }
     }
     @IBAction func languageChanged(_ sender: UISegmentedControl) {
         if let lang = sender.titleForSegment(at:sender.selectedSegmentIndex)?.lowercased() {

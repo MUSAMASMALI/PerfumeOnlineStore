@@ -11,7 +11,7 @@ class SignUpViewController: UIViewController {
     
     @IBOutlet weak var userImageView: UIImageView! {
         didSet {
-            userImageView.layer.borderColor = UIColor.systemPurple.cgColor
+            userImageView.layer.borderColor = UIColor.systemGray.cgColor
             userImageView.layer.borderWidth = 3.0
             userImageView.layer.cornerRadius = userImageView.bounds.height / 2
             userImageView.layer.masksToBounds = true
