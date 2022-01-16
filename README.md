@@ -7,7 +7,7 @@
 ![](LightMode.gif)
 ![](DarkMode.gif)
 
-##usre stories:
+## usre stories:
 
 - user can make register & loge in.
 - user can send New "perfume to sell".

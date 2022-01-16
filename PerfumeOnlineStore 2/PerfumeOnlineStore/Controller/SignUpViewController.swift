@@ -36,12 +36,13 @@ class SignUpViewController: UIViewController {
         view.addGestureRecognizer(UITapGestureRecognizer(target: view, action: #selector(UIView.endEditing(_:))))
         navigationItem.backBarButtonItem = UIBarButtonItem(
             title: "backButton".localized, style: .plain, target: nil, action: nil)
-        registerButton.setTitle("RegRegisterVC".localized, for: .normal)
+        registerButton.setTitle(NSLocalizedString("Register", comment: ""), for: .normal)
         nameLable.text = "name".localized
         mobileLable.text = "mobile".localized
         emailLable.text = "email".localized
         passowrdLable.text = "password".localized
         confirmPasswordLable.text = "confirmPassword".localized
+        
         
         // Do any additional setup after loading the view.
         imagePickerController.delegate = self

@@ -9,7 +9,7 @@
 "backButton" = "Back";
 "login" = "Login";
 //
-"register" = "New account";
+"RegRegisterVC" = "Create new account";
 "name" = "Name";
 "mobile" = "Mobile";
 "email" = "Email";
@@ -27,3 +27,4 @@
 "backButton" = "Back";
 "logOut" = "logeOut";
 "number" = "Number";
+"Register" = "Create new account";
