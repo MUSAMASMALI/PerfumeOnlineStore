@@ -26,5 +26,7 @@
 //
 "backButton" = "Back";
 "logOut" = "logeOut";
-"number" = "Number";
+//"number" = "Number";
 "Register" = "Create new account";
+
+"number1" = "Number";

@@ -27,5 +27,6 @@
 //
 "backButton" = "رجوع";
 "logOut" = "تسجيل خروج";
-"number " = "الرقم";
+//"number " = "الرقم";
 "Register" = "تسجيل جديد";
+"number1" = "الرقم";
